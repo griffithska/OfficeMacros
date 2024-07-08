@@ -1,0 +1,7 @@
+Sub PersonalApptTemplate()
+    Dim MyItem As Outlook.AppointmentItem
+    
+    Set MyItem = Application.CreateItemFromTemplate("C:\Users\kgriffiths\AppData\Roaming\Microsoft\Templates\Appt.oft")
+    MyItem.Start = Now
+    MyItem.Display
+End Sub
